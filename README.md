@@ -25,6 +25,17 @@ npm run preview
 
 ## بارگذاری دستی در GitHub
 
+### روش ساده: فقط چهار فایل آمادهٔ سایت
+
+1. در پوشهٔ پروژه دستور `npm run build:github` را اجرا کنید.
+2. پوشهٔ `github-upload` ساخته می‌شود و فقط این چهار فایل را دارد: `index.html`، `manifest.webmanifest`، `sw.js` و `icon.svg`. کد برنامه، CSS و فونت‌ها داخل HTML قرار گرفته‌اند.
+3. همین چهار فایل را از داخل `github-upload` در ریشهٔ repository با **Add file → Upload files** بارگذاری و Commit کنید؛ خود پوشهٔ `github-upload` را داخل repository نسازید.
+4. در **Settings → Pages**، اگر روش branch را انتخاب کرده‌اید، Branch را `main` و Folder را `/(root)` بگذارید.
+
+برای هر نسخهٔ جدید، دستور build را دوباره اجرا و همین چهار فایل را جایگزین کنید. در این روش نیازی به بارگذاری `node_modules`، `dist`، فایل‌های نقطه‌دار یا انتخاب پوشه‌های سورس نیست.
+
+### روش خودکار: نگه‌داری سورس در GitHub
+
 1. در GitHub یک repository خالی بسازید؛ اگر می‌خواهید انتشار خودکار انجام شود، شاخهٔ پیش‌فرض را `main` بگذارید.
 2. در repository، از **Add file → Upload files** استفاده کنید و این موارد را از پوشهٔ پروژه بارگذاری کنید:
    - پوشه‌های `src` و `public`
