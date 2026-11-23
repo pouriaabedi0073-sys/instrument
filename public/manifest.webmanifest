@@ -1,0 +1,20 @@
+{
+  "name": "PrecisionPro | ابزار دقیق و سیستم کنترل",
+  "short_name": "PrecisionPro",
+  "description": "دانشنامه و مسیر یادگیری فارسی ابزار دقیق و سیستم کنترل",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f3ed",
+  "theme_color": "#1d4b38",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
